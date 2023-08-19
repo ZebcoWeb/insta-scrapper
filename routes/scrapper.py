@@ -49,7 +49,7 @@ async def login(
 
 
 @router.post("/set-cookie")
-async def login(
+async def set_cookie(
     username: str = Form(...), 
     cookies: str = Form(...),
     is_authenticated: bool = Depends(is_authenticated)
